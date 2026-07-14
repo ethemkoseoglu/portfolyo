@@ -37,7 +37,7 @@ function validate(values: FormValues, f: Dict["ui"]["form"]): FormErrors {
 
 const fieldBase =
   "w-full border-0 border-b border-line bg-transparent py-3 font-body text-foreground placeholder:text-muted/50 transition-colors duration-300 focus:border-accent focus:outline-none focus:ring-0";
-const labelBase = "block text-[0.65rem] uppercase tracking-[0.2em] text-muted";
+const labelBase = "block text-[0.72rem] uppercase tracking-[0.16em] text-muted";
 const errorBase = "mt-2 text-xs text-accent";
 
 export function ContactForm() {

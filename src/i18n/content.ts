@@ -14,7 +14,7 @@ export type Lang = "tr" | "en";
 /** All localized content + UI strings for one language. */
 export interface Dict {
   nav: NavItem[];
-  hero: { title: string };
+  hero: { title: string; role: string };
   sectionTitles: {
     about: string;
     projects: string;
@@ -97,7 +97,10 @@ const tr: Dict = {
     { label: "Yetkinlikler", href: "/#yetkinlikler" },
     { label: "İletişim", href: "/#iletisim" },
   ],
-  hero: { title: "İşletme problemlerini dijital ürünlere dönüştürüyorum." },
+  hero: {
+    title: "İşletme problemlerini dijital ürünlere dönüştürüyorum.",
+    role: "Ürün Geliştirici & Girişimci",
+  },
   sectionTitles: {
     about: "Hakkımda",
     projects: "Seçilmiş Projeler",
@@ -432,7 +435,10 @@ const en: Dict = {
     { label: "Skills", href: "/#yetkinlikler" },
     { label: "Contact", href: "/#iletisim" },
   ],
-  hero: { title: "I turn business problems into digital products." },
+  hero: {
+    title: "I turn business problems into digital products.",
+    role: "Product Developer & Entrepreneur",
+  },
   sectionTitles: {
     about: "About",
     projects: "Selected Projects",

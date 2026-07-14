@@ -4,7 +4,7 @@
  */
 export function BracketLabel({ label }: { label: string }) {
   return (
-    <span className="text-[0.65rem] font-medium uppercase tracking-[0.25em] text-muted">
+    <span className="text-[0.72rem] font-medium uppercase tracking-[0.18em] text-muted">
       <span className="text-accent">[</span>
       {label}
       <span className="text-accent">]</span>

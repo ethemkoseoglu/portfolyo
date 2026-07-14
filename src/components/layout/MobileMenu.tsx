@@ -89,8 +89,15 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           </nav>
 
           <div className="flex flex-col gap-4 border-t border-line px-6 py-6">
+            <Link
+              href="/#iletisim"
+              onClick={onClose}
+              className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full bg-foreground text-xs font-medium uppercase tracking-[0.16em] text-background ring-1 ring-transparent transition-all hover:bg-transparent hover:text-foreground hover:ring-accent"
+            >
+              {t.ui.getInTouch}
+            </Link>
             <div className="flex items-center justify-between">
-              <span className="text-[0.65rem] uppercase tracking-[0.2em] text-muted">
+              <span className="text-[0.72rem] uppercase tracking-[0.16em] text-muted">
                 {t.ui.language}
               </span>
               <LangToggle lang={lang} onChange={setLang} />
@@ -105,7 +112,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
               {t.ui.cv} (PDF)
             </a>
             <div className="flex items-center justify-between">
-              <span className="text-[0.65rem] uppercase tracking-[0.2em] text-muted">
+              <span className="text-[0.72rem] uppercase tracking-[0.16em] text-muted">
                 {t.ui.contactLabel}
               </span>
               <SocialLinks />

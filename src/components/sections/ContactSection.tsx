@@ -50,7 +50,7 @@ export function ContactSection() {
 
               <dl className="mt-10 space-y-4 border-t border-line pt-8">
                 <div className="flex flex-col gap-1">
-                  <dt className="text-[0.6rem] uppercase tracking-[0.2em] text-muted">
+                  <dt className="text-[0.7rem] uppercase tracking-[0.16em] text-muted">
                     {t.ui.dt.email}
                   </dt>
                   <dd>
@@ -63,7 +63,7 @@ export function ContactSection() {
                   </dd>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <dt className="text-[0.6rem] uppercase tracking-[0.2em] text-muted">
+                  <dt className="text-[0.7rem] uppercase tracking-[0.16em] text-muted">
                     {t.ui.dt.phone}
                   </dt>
                   <dd>
@@ -76,7 +76,7 @@ export function ContactSection() {
                   </dd>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <dt className="text-[0.6rem] uppercase tracking-[0.2em] text-muted">
+                  <dt className="text-[0.7rem] uppercase tracking-[0.16em] text-muted">
                     {t.ui.dt.location}
                   </dt>
                   <dd className="text-sm text-foreground">{site.location}</dd>

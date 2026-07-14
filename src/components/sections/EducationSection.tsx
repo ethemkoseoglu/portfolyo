@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { useLang } from "@/i18n/LanguageProvider";
 
-const columnTitle = "text-[0.65rem] uppercase tracking-[0.24em] text-muted";
+const columnTitle = "text-[0.72rem] uppercase tracking-[0.18em] text-muted";
 
 export function EducationSection() {
   const { t } = useLang();
@@ -19,7 +19,7 @@ export function EducationSection() {
         {/* Highlighted program (BiGG+) */}
         <Reveal className="mt-8 flex flex-col gap-3 border-y border-line py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
           <div>
-            <p className="text-[0.6rem] uppercase tracking-[0.24em] text-accent">
+            <p className="text-[0.68rem] uppercase tracking-[0.18em] text-accent">
               {bigg.program} · {t.ui.program}
             </p>
             <p className="mt-2 font-heading text-xl font-bold text-foreground">

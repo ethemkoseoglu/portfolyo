@@ -51,7 +51,7 @@ export function ProjectDetail({ slug }: { slug: string }) {
           <div className="mt-6 flex flex-wrap items-start justify-between gap-6">
             <h1 className="heading-section text-foreground">{project.name}</h1>
             {project.logo ? (
-              <span className="flex items-center justify-center rounded-lg bg-foreground p-3.5">
+              <span className="flex items-center justify-center rounded-lg bg-[#eae6dc] p-3.5 ring-1 ring-inset ring-black/[0.06]">
                 <span className="relative block h-10 w-32">
                   <Image
                     src={project.logo.src}
