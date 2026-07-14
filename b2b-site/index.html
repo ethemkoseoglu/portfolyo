@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ================= SEO ================= -->
+  <title>Adınız Soyadınız — Endüstri Mühendisliği &amp; B2B Ürün Geliştirme</title>
+  <meta name="description" content="Endüstri mühendisliği öğrencisi; B2B yazılım, ERP sistemleri ve ürün geliştirme odaklı projeler. Süreçleri sistemlere, fikirleri ürünlere dönüştürüyorum.">
+  <meta name="keywords" content="endüstri mühendisliği, B2B yazılım, ERP, süreç optimizasyonu, ürün geliştirme, girişimcilik, portfolyo">
+  <meta name="author" content="Adınız Soyadınız">
+  <meta name="theme-color" content="#1d4ed8">
+  <!-- REPLACE: yayına aldığınızda gerçek alan adınızı yazın -->
+  <link rel="canonical" href="https://siteniz.com/">
+
+  <!-- ================= Open Graph (LinkedIn / Facebook) ================= -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Adınız Soyadınız — Endüstri Mühendisliği & B2B Ürün Geliştirme">
+  <meta property="og:description" content="Süreçleri sistemlere, fikirleri ürünlere dönüştürüyorum. B2B yazılım, ERP ve ürün geliştirme portfolyosu.">
+  <!-- REPLACE: alan adınızla birlikte tam (mutlak) URL olmalı -->
+  <meta property="og:url" content="https://siteniz.com/">
+  <meta property="og:image" content="https://siteniz.com/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- ================= Twitter / X ================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adınız Soyadınız — Endüstri Mühendisliği & B2B Ürün Geliştirme">
+  <meta name="twitter:description" content="Süreçleri sistemlere, fikirleri ürünlere dönüştürüyorum.">
+  <meta name="twitter:image" content="https://siteniz.com/assets/og-cover.png">
+
+  <!-- ================= Favicon ================= -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- ================= Fontlar (performans için optimize) =================
+       Font CSS'ini render'ı engellemeden yükleriz: önce preload, sonra
+       media="print" + onload hilesiyle uygulanır. JS kapalıysa <noscript>
+       devreye girer. Sadece kullanılan ağırlıklar çekilir (payload küçük). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=Space+Grotesk:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=Space+Grotesk:wght@400;500;700&display=swap">
+  </noscript>
+
+  <!-- Site stilleri -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ================= JSON-LD (kişi şeması, arama motorları için) =================
+       REPLACE: name / url / sameAs alanlarını gerçek bilgilerinizle doldurun. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adınız Soyadınız",
+    "jobTitle": "Endüstri Mühendisliği Öğrencisi · B2B Ürün Geliştirici",
+    "url": "https://siteniz.com/",
+    "sameAs": ["https://www.linkedin.com/in/kullaniciadi"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- İçeriğe atla (erişilebilirlik) -->
+<a class="skip-link" href="#projeler">İçeriğe atla</a>
+
+<!-- Üstte kaydırma ilerleme çizgisi (JS ile doldurulur) -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ================= ÜST MENÜ ================= -->
+<header>
+  <div class="nav-inner">
+    <a class="logo" href="#hero"><span class="globe" aria-hidden="true"></span>ADINIZ SOYADINIZ</a>
+    <nav class="pills" id="pills" aria-label="Ana menü">
+      <a class="pill" href="#hakkimda">Hakkımda</a>
+      <a class="pill" href="#projeler">Projeler</a>
+      <a class="pill" href="#iletisim">İletişim</a>
+    </nav>
+    <a class="cta-dark" href="#iletisim">Bağlantı Kuralım</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="pills">Menü</button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero-left grid-bg">
+    <h1>Süreçleri Sistemlere, Fikirleri Ürünlere Dönüştürüyorum</h1>
+    <a class="link-underline" href="#projeler">Projelerimi İncele</a>
+  </div>
+  <div class="hero-right">
+    <span class="tag"><span class="dot lime"></span>Endüstri Mühendisliği Öğrencisi</span>
+    <h2>B2B Yazılım · ERP · Ürün Geliştirme</h2>
+    <p>İşletme problemlerini mühendislik ve yazılımla çözüyorum.</p>
+  </div>
+</section>
+
+<!-- ================= YETKİNLİK ŞERİDİ ================= -->
+<div class="marquee" aria-label="Yetkinlikler">
+  <span class="label"><span class="dot lime"></span>Yetkinlikler</span>
+  <div class="marquee-track">
+    <span>ERP Sistemleri *</span><span>Süreç Optimizasyonu *</span><span>B2B Ürün Geliştirme *</span><span>Veri Analizi *</span><span>SQL *</span><span>Python *</span><span>Yalın Üretim *</span><span>Tedarik Zinciri *</span>
+    <span>ERP Sistemleri *</span><span>Süreç Optimizasyonu *</span><span>B2B Ürün Geliştirme *</span><span>Veri Analizi *</span><span>SQL *</span><span>Python *</span><span>Yalın Üretim *</span><span>Tedarik Zinciri *</span>
+  </div>
+</div>
+
+<!-- ================= SİNEMATİK BÖLÜM (Apple tarzı pinned scroll) =================
+     Kaydırdıkça ekran sabitlenir ve üç aşama sırayla belirir. Hero başlığındaki
+     "Süreç → Sistem → Ürün" fikrini sinematik biçimde vurgular. Davranış
+     js/main.js içindeki initCinematic() fonksiyonunda; hareket tercihi kapalıysa
+     otomatik olarak sabit bir listeye döner. -->
+<section class="cinematic" id="sinematik" aria-label="Süreçten ürüne yaklaşım">
+  <div class="cine-sticky">
+    <div class="cine-stages">
+      <div class="cine-stage" data-stage="0">
+        <span class="cine-idx">01</span>
+        <h2>Süreçleri <em>analiz</em> ediyorum.</h2>
+      </div>
+      <div class="cine-stage" data-stage="1">
+        <span class="cine-idx">02</span>
+        <h2>Onları <em>sistemlere</em> dönüştürüyorum.</h2>
+      </div>
+      <div class="cine-stage" data-stage="2">
+        <span class="cine-idx">03</span>
+        <h2>Ve <em>ürünlerle</em> büyütüyorum.</h2>
+        <a class="cine-cta" href="#projeler">Projelerime Bak</a>
+      </div>
+    </div>
+    <div class="cine-progress" aria-hidden="true"><span class="cine-bar" id="cineBar"></span></div>
+  </div>
+</section>
+
+<!-- ================= PROJELER ================= -->
+<section id="projeler">
+  <div class="band">
+    <span class="kicker"><span class="dot pink"></span>Seçili Çalışmalar</span>
+    <h2>Projelerime Bir Bakış</h2>
+  </div>
+
+  <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  GERÇEK EKRAN GÖRÜNTÜSÜ EKLEME                                     ║
+    ║  Her projede solda CSS ile çizilmiş bir tarayıcı mockup'ı var.    ║
+    ║  Gerçek görselinizi koymak için ilgili <div class="browser">...   ║
+    ║  </div> bloğunu TAMAMEN silip yerine şunu yazın:                  ║
+    ║                                                                    ║
+    ║    <img class="mock-img" src="images/prj-01.png"                  ║
+    ║         alt="Proje adı ekran görüntüsü"                            ║
+    ║         width="1200" height="750" loading="lazy">                 ║
+    ║                                                                    ║
+    ║  Görselleri b2b-site/images/ klasörüne koyun. Önerilen oran ~16:10 ║
+    ║  (ör. 1200×750). .mock-img stili görseli aynı çerçeveye oturtur.  ║
+    ╚══════════════════════════════════════════════════════════════════╝
+  -->
+
+  <div class="cases">
+
+    <!-- PRJ-01 -->
+    <article class="case-row reveal">
+      <div class="mock-wrap">
+        <!-- Gerçek görsel için: bu .browser bloğunu <img class="mock-img" ...> ile değiştirin -->
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span class="url">app.stoktakip.com/panel</span></div>
+          <div class="ui">
+            <div class="side"><span class="lg"></span><i class="on"></i><i></i><i></i><i></i><i></i></div>
+            <div class="main">
+              <div class="mtitle"><b>Stok Yönetim Paneli</b><span>Canlı</span></div>
+              <div class="kpis">
+                <div class="kpi"><div class="v">1.284</div><div class="k">Aktif SKU</div></div>
+                <div class="kpi"><div class="v">%99,2</div><div class="k">Sayım Doğruluğu</div></div>
+                <div class="kpi"><div class="v">37</div><div class="k">Kritik Stok</div></div>
+              </div>
+              <div class="panel2">
+                <div class="chartbox">
+                  <div class="cap">HAFTALIK STOK HAREKETİ</div>
+                  <div class="bars"><i style="height:45%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:85%"></i><i style="height:62%"></i><i style="height:92%"></i><i style="height:74%"></i></div>
+                </div>
+                <div class="tablebox">
+                  <div class="cap">SON HAREKETLER</div>
+                  <div class="trows">
+                    <div class="trow"><i></i><em>Giriş</em></div>
+                    <div class="trow"><i style="width:80%"></i><em>Giriş</em></div>
+                    <div class="trow"><i style="width:65%"></i><em>Bekliyor</em></div>
+                    <div class="trow"><i style="width:90%"></i><em>Giriş</em></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case-info">
+        <span class="case-code">PRJ-01 · ERP MODÜLÜ</span>
+        <h3>KOBİ'ler için Stok Takip Modülü</h3>
+        <div class="case-meta"><span class="chip">ERP</span><span class="chip">Stok Yönetimi</span><span class="chip">SQL</span><span class="chip">Barkod</span></div>
+        <div class="ps">
+          <div class="line"><b>Problem</b><span>Manuel sayım hataları sipariş kararlarını geciktiriyordu.</span></div>
+          <div class="line"><b>Çözüm</b><span>Barkodlu, gerçek zamanlı stok takibi sunan ERP modülü.</span></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="num">%40</div><div class="lbl">daha az hata</div></div>
+          <div class="stat"><div class="num">2 sn</div><div class="lbl">ürün sorgulama</div></div>
+          <div class="stat"><div class="num">1.200+</div><div class="lbl">SKU test edildi</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRJ-02 -->
+    <article class="case-row reveal">
+      <div class="mock-wrap">
+        <!-- Gerçek görsel için: bu .browser bloğunu <img class="mock-img" ...> ile değiştirin -->
+        <div class="browser dark">
+          <div class="bar"><i></i><i></i><i></i><span class="url">simulasyon.uretimhatti.local</span></div>
+          <div class="ui">
+            <div class="side"><span class="lg"></span><i></i><i class="on"></i><i></i><i></i><i></i></div>
+            <div class="main">
+              <div class="mtitle"><b>Hat Dengeleme Simülasyonu</b><span>Senaryo B</span></div>
+              <div class="kpis">
+                <div class="kpi"><div class="v">%78→%91</div><div class="k">Hat Verimliliği</div></div>
+                <div class="kpi"><div class="v">-34 dk</div><div class="k">Günlük Bekleme</div></div>
+                <div class="kpi"><div class="v">İst. 4</div><div class="k">Darboğaz</div></div>
+              </div>
+              <div class="panel2">
+                <div class="chartbox">
+                  <div class="cap">İSTASYON DOLULUK ORANLARI</div>
+                  <div class="bars"><i style="height:60%"></i><i style="height:72%"></i><i style="height:66%"></i><i style="height:98%"></i><i style="height:58%"></i><i style="height:64%"></i></div>
+                </div>
+                <div class="tablebox">
+                  <div class="cap">İYİLEŞTİRME ADIMLARI</div>
+                  <div class="trows">
+                    <div class="trow"><i></i><em>Tamam</em></div>
+                    <div class="trow"><i style="width:75%"></i><em>Tamam</em></div>
+                    <div class="trow"><i style="width:85%"></i><em>Sürüyor</em></div>
+                    <div class="trow"><i style="width:60%"></i><em>Tamam</em></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case-info">
+        <span class="case-code">PRJ-02 · SÜREÇ OPTİMİZASYONU</span>
+        <h3>Üretim Hattı Verimlilik Çalışması</h3>
+        <div class="case-meta"><span class="chip">Yalın Üretim</span><span class="chip">Simülasyon</span><span class="chip">Zaman Etüdü</span><span class="chip">Veri Analizi</span></div>
+        <div class="ps">
+          <div class="line"><b>Problem</b><span>Darboğaz istasyonu hattın çıktısını sınırlıyordu.</span></div>
+          <div class="line"><b>Çözüm</b><span>Simülasyonla iş yükünü dengeleyen hat önerisi.</span></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="num">%15</div><div class="lbl">kapasite artışı</div></div>
+          <div class="stat"><div class="num">6</div><div class="lbl">istasyon analizi</div></div>
+          <div class="stat"><div class="num">3</div><div class="lbl">senaryo</div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PRJ-03 -->
+    <article class="case-row reveal">
+      <div class="mock-wrap">
+        <!-- Gerçek görsel için: bu .browser bloğunu <img class="mock-img" ...> ile değiştirin -->
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span class="url">tedarikci-platformu.com/teklifler</span></div>
+          <div class="ui">
+            <div class="side"><span class="lg"></span><i></i><i></i><i class="on"></i><i></i><i></i></div>
+            <div class="main">
+              <div class="mtitle"><b>Teklif Karşılaştırma</b><span>MVP</span></div>
+              <div class="kpis">
+                <div class="kpi"><div class="v">14</div><div class="k">Aktif Tedarikçi</div></div>
+                <div class="kpi"><div class="v">5</div><div class="k">Açık Talep</div></div>
+                <div class="kpi"><div class="v">%22</div><div class="k">Ort. Tasarruf</div></div>
+              </div>
+              <div class="panel2">
+                <div class="chartbox">
+                  <div class="cap">TEKLİF FİYAT KARŞILAŞTIRMASI</div>
+                  <div class="bars"><i style="height:88%"></i><i style="height:66%"></i><i style="height:74%"></i><i style="height:52%"></i><i style="height:70%"></i></div>
+                </div>
+                <div class="tablebox">
+                  <div class="cap">GELEN TEKLİFLER</div>
+                  <div class="trows">
+                    <div class="trow"><i></i><em>Yeni</em></div>
+                    <div class="trow"><i style="width:70%"></i><em>Yeni</em></div>
+                    <div class="trow"><i style="width:85%"></i><em>İnceleme</em></div>
+                    <div class="trow"><i style="width:55%"></i><em>Yeni</em></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case-info">
+        <span class="case-code">PRJ-03 · B2B SAAS GİRİŞİMİ</span>
+        <h3>Tedarikçi Yönetim Platformu (MVP)</h3>
+        <div class="case-meta"><span class="chip">Girişimcilik</span><span class="chip">MVP</span><span class="chip">B2B SaaS</span><span class="chip">Ürün Geliştirme</span></div>
+        <div class="ps">
+          <div class="line"><b>Problem</b><span>Teklifleri karşılaştırmak saatler alıyordu.</span></div>
+          <div class="line"><b>Çözüm</b><span>Teklifleri tek panelde toplayan B2B SaaS MVP'si.</span></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="num">MVP</div><div class="lbl">aktif geliştirme</div></div>
+          <div class="stat"><div class="num">8</div><div class="lbl">kullanıcı görüşmesi</div></div>
+          <div class="stat"><div class="num">%22</div><div class="lbl">tasarruf hedefi</div></div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= HAKKIMDA ================= -->
+<section class="about" id="hakkimda">
+  <div class="about-left grid-bg">
+    <h2>Mühendislik + Yazılım + Girişimcilik</h2>
+  </div>
+  <div class="about-right">
+    <div class="point">
+      <span class="dot pink"></span>
+      <p>Süreçleri veriyle ölçer, modeller ve iyileştiririm.</p>
+    </div>
+    <div class="point">
+      <span class="dot lime"></span>
+      <p>İşletme problemlerine B2B yazılım ve ERP ile çözüm üretirim.</p>
+    </div>
+    <div class="point">
+      <span class="dot blue"></span>
+      <p>Fikirleri MVP'ye dönüştürüp kullanıcıyla doğrularım.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= İLETİŞİM ================= -->
+<section class="contact" id="iletisim">
+  <div class="contact-inner">
+    <div>
+      <h2>İletişim</h2>
+      <p class="lead">Staj, proje ya da iş birliği için yazın.</p>
+      <div class="info-tags">
+        <div class="row"><span class="pill"><span class="dot lime"></span> Konum</span><span class="val">Denizli, Türkiye</span></div>
+        <div class="row"><span class="pill"><span class="dot blue"></span> Telefon</span><span class="val">+90 5XX XXX XX XX</span></div>
+        <div class="row"><span class="pill"><span class="dot pink"></span> E-posta</span><span class="val">bilgi@siteniz.com</span></div>
+      </div>
+    </div>
+
+    <!-- ================= İLETİŞİM FORMU (Formspree) =================
+         KURULUM: https://formspree.io adresinden ücretsiz bir form oluşturun,
+         size verilen form ID'sini (ör. xxxxabcd) aşağıdaki action URL'sinde
+         YOUR_FORM_ID yerine yazın. Statik sitede .env çalışmadığı için endpoint
+         doğrudan burada tutulur; gönderim AJAX olarak js/main.js içinde yapılır. -->
+    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <div><label for="ad">Ad *</label><input id="ad" name="ad" required></div>
+        <div><label for="soyad">Soyad *</label><input id="soyad" name="soyad" required></div>
+      </div>
+      <div><label for="eposta">E-posta *</label><input id="eposta" name="email" type="email" required></div>
+      <div><label for="mesaj">Mesajınız</label><textarea id="mesaj" name="mesaj"></textarea></div>
+      <!-- Spam tuzağı (Formspree bunu dolu görürse gönderimi eler) -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-top">
+    <a class="logo" href="#hero"><span class="globe" aria-hidden="true"></span>ADINIZ SOYADINIZ</a>
+    <div class="info-card">
+      <div class="row"><span class="k"><span class="dot lime"></span>Konum</span><span>Denizli, Türkiye</span></div>
+      <div class="row"><span class="k"><span class="dot blue"></span>LinkedIn</span><a href="#" target="_blank" rel="noopener">linkedin.com/in/kullaniciadi</a></div>
+      <div class="row"><span class="k"><span class="dot pink"></span>E-posta</span><a href="mailto:bilgi@siteniz.com">bilgi@siteniz.com</a></div>
+      <div class="row"><a href="#">Gizlilik Politikası</a><a href="#">Erişilebilirlik</a></div>
+    </div>
+  </div>
+  <div class="footer-marquee" aria-hidden="true">
+    <div class="track">
+      <span>ADINIZ SOYADINIZ · ENDÜSTRİ MÜHENDİSİ · B2B ÜRÜN GELİŞTİRİCİ ·</span>
+      <span>ADINIZ SOYADINIZ · ENDÜSTRİ MÜHENDİSİ · B2B ÜRÜN GELİŞTİRİCİ ·</span>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026, Adınız Soyadınız. Tüm hakları saklıdır.</div>
+</footer>
+
+<!-- Site betikleri -->
+<script src="js/main.js" defer></script>
+</body>
+</html>
