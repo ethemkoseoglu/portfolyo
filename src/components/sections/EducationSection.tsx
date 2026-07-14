@@ -12,7 +12,7 @@ export function EducationSection() {
   const bigg = t.achievement;
 
   return (
-    <section id="egitim" className="py-14 sm:py-20">
+    <section id="egitim" className="border-t border-line py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading title={t.sectionTitles.education} />
 

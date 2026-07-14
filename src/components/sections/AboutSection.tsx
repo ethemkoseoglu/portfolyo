@@ -8,7 +8,7 @@ export function AboutSection() {
   const { t } = useLang();
 
   return (
-    <section id="hakkimda" className="py-14 sm:py-20">
+    <section id="hakkimda" className="border-t border-line py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading title={t.sectionTitles.about} />
         <Reveal className="mt-8 max-w-3xl">

@@ -10,9 +10,10 @@ export function ContactSection() {
   const { t } = useLang();
 
   return (
-    <section id="iletisim" className="py-14 sm:py-20">
+    <section id="iletisim" className="border-t border-line py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
+          <span aria-hidden className="mb-6 block h-px w-12 bg-accent" />
           <h2 className="heading-cta max-w-5xl text-balance text-foreground">
             {t.contactHeading}
           </h2>

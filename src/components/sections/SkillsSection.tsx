@@ -9,7 +9,7 @@ export function SkillsSection() {
   const { t } = useLang();
 
   return (
-    <section id="yetkinlikler" className="py-14 sm:py-20">
+    <section id="yetkinlikler" className="border-t border-line py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading title={t.sectionTitles.skills} />
 
