@@ -60,7 +60,14 @@ export function ContactForm() {
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
 
-    // TODO: Integrate with Formspree, Resend, or a custom API route.
+    // Opens the visitor's mail client with the message pre-filled, addressed
+    // to the site owner. Zero backend, works everywhere. Swap for Formspree /
+    // Resend / an API route later for a seamless in-page submit.
+    const subject = `${values.subject} — ${values.name}`;
+    const body = `${values.message}\n\n—\n${values.name}\n${values.email}`;
+    window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
     setValues(EMPTY);
   }

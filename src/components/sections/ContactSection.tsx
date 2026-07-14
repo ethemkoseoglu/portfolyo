@@ -41,7 +41,7 @@ export function ContactSection() {
                 </div>
                 <PillButton
                   href={`mailto:${site.email}`}
-                  variant="primary"
+                  variant="secondary"
                   className="w-full"
                 >
                   {t.ui.sendEmail}
