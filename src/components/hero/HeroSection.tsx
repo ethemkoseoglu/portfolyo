@@ -8,7 +8,7 @@ export function HeroSection() {
   const { t } = useLang();
 
   return (
-    <section className="relative overflow-hidden">
+    <section id="ana-sayfa" className="relative overflow-hidden">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"

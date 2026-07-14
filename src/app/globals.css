@@ -84,9 +84,10 @@ section[id] {
 .heading-xl {
   font-family: var(--font-heading), system-ui, sans-serif;
   font-weight: 700;
-  font-size: clamp(1.9rem, 4.5vw, 3.75rem);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  /* Distinct sub-step below the section scale (used on the 404 page). */
+  font-size: clamp(1.75rem, 3.6vw, 2.75rem);
+  line-height: 1;
+  letter-spacing: -0.015em;
 }
 
 .heading-cta {

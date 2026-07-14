@@ -16,6 +16,7 @@ const iconLink =
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [active, setActive] = useState("");
   const { lang, setLang, t } = useLang();
 
   useEffect(() => {
@@ -24,6 +25,29 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Scroll-spy: highlight the nav item for the section currently in view.
+  useEffect(() => {
+    const ids = t.nav
+      .map((item) => item.href.split("#")[1])
+      .filter((id): id is string => Boolean(id));
+    const sections = ids
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => Boolean(el));
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const inView = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (inView[0]) setActive(inView[0].target.id);
+      },
+      { rootMargin: "-45% 0px -50% 0px" },
+    );
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [t.nav]);
 
   const cvUrl = lang === "en" ? site.cvEn : site.cvTr;
 
@@ -48,16 +72,31 @@ export function Navbar() {
           </Link>
 
           <ul className="hidden items-center gap-8 lg:flex">
-            {t.nav.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-[0.7rem] uppercase tracking-[0.18em] text-muted transition-colors hover:text-foreground"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+            {t.nav.map((item) => {
+              const id = item.href.split("#")[1];
+              const isActive = active === id;
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`relative text-[0.7rem] uppercase tracking-[0.18em] transition-colors ${
+                      isActive
+                        ? "text-foreground"
+                        : "text-muted hover:text-foreground"
+                    }`}
+                  >
+                    {item.label}
+                    <span
+                      aria-hidden
+                      className={`absolute -bottom-1.5 left-0 h-px bg-accent transition-all duration-300 ${
+                        isActive ? "w-full opacity-100" : "w-0 opacity-0"
+                      }`}
+                    />
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           <div className="flex items-center gap-2.5">

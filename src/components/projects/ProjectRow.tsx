@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { Project } from "@/lib/types";
 
 /**
@@ -15,8 +15,8 @@ export function ProjectRow({ project }: { project: Project }) {
       <h3 className="font-heading text-2xl font-bold tracking-tight text-foreground transition-transform duration-300 group-hover:translate-x-2 sm:text-4xl">
         {project.name}
       </h3>
-      <ArrowUpRight
-        className="h-6 w-6 shrink-0 text-muted transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
+      <ArrowRight
+        className="h-6 w-6 shrink-0 text-muted transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent"
         strokeWidth={1.5}
         aria-hidden
       />

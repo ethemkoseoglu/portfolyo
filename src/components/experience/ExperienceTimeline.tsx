@@ -15,7 +15,7 @@ export function ExperienceTimeline({ experiences }: { experiences: Experience[] 
         >
           <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-4">
             {exp.period ? (
-              <span className="shrink-0 text-[0.65rem] uppercase tracking-[0.2em] text-accent sm:w-24">
+              <span className="shrink-0 text-xs uppercase tracking-[0.16em] text-accent sm:w-24">
                 {exp.period}
               </span>
             ) : null}

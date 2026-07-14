@@ -20,17 +20,19 @@ export function LangToggle({
       type="button"
       onClick={() => onChange(l)}
       aria-pressed={lang === l}
-      className={`relative py-1 transition-colors duration-300 ${
+      className={`inline-flex min-h-[44px] items-center px-1.5 transition-colors duration-300 ${
         lang === l ? "text-foreground" : "text-muted hover:text-foreground"
       }`}
     >
-      {l.toUpperCase()}
-      <span
-        aria-hidden
-        className={`absolute -bottom-0.5 left-1/2 h-px -translate-x-1/2 bg-accent transition-all duration-300 ${
-          lang === l ? "w-4 opacity-100" : "w-0 opacity-0"
-        }`}
-      />
+      <span className="relative">
+        {l.toUpperCase()}
+        <span
+          aria-hidden
+          className={`absolute -bottom-1 left-1/2 h-px -translate-x-1/2 bg-accent transition-all duration-300 ${
+            lang === l ? "w-4 opacity-100" : "w-0 opacity-0"
+          }`}
+        />
+      </span>
     </button>
   );
 
